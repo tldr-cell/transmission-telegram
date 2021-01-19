@@ -14,7 +14,7 @@ services:
     environment:
       - PGID=1000
       - PUID=1000
-      - TZ=Europe/Moscow
+      - TZ=Asia/Jakarta
 
   transmission-telegram:
     container_name: transmission-telegram
@@ -28,10 +28,10 @@ services:
     # your bot token, passed to -token CLI argument
       - BOT_TOKEN=123456789:MyToken
     # your master users, passed to -master CLI argument
-      - MASTERS=@myuser
+      - MASTERS=@username
     # URL of transmission service, here it refers to transmission service above
       - TRANSMISSION_URL=http://transmission:9091/transmission/rpc
     # optional for transmission rpc auth
       - TRANSMISSION_USERNAME=myuser
       - TRANSMISSION_PASSWORD=mypass
-      - TZ=Europe/Moscow
+      - TZ=Asia/Jakarta
