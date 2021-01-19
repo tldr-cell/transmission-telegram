@@ -1,8 +1,8 @@
 FROM golang:1.8
 
-RUN mkdir -p ./src/github.com/zhulik/transmission-telegram
+RUN mkdir -p ./src/github.com/tldr-cell/transmission-telegram
 
-WORKDIR ./src/github.com/zhulik/transmission-telegram
+WORKDIR ./src/github.com/tldr-cell/transmission-telegram
 
 ADD . ./
 
